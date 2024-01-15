@@ -230,6 +230,7 @@ body {
 
 .flex {
     display: flex;
+    flex-direction: column;
 }
 
 .belo {
