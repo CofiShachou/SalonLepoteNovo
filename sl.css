@@ -222,17 +222,17 @@ body {
 }
 
 .fb {
-    width: 100%;
+    width: 100vw;
     height: 70vh;
     background-image: url(./images/footer.png);
     background-size: contain;
     background-repeat: no-repeat;
+    /* background-color: red; */
 }
 
 .footer {
-
-
-    margin-top: 50px;
+    height: 70vh;
+    /* margin-top: 50px; */
     background-color: var(--boja1);
     padding: 1em;
     display: flex;
@@ -240,7 +240,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 1em;
 }
 
 .ig {
@@ -290,7 +289,7 @@ body {
 
 .dole {
     margin-top: 20vh;
-    width: 50vh;
+    width: 80vw;
     margin-left: 5vw;
 
 }
