@@ -1,13 +1,24 @@
 let lastScrollTop = 0;
 let x = $("#header");
-let y=$("#hero");
+let y;
 window.addEventListener("scroll", (() => {
     var scrollTop = window.scrollY || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
+
+    var scrollDelta = scrollTop - lastScrollTop;
+
+    if (scrollDelta > 0) {
         x.css("top", "-250px");
+        console.log(scrollDelta);
     }
-    else {
+
+
+    if (scrollDelta < -20) {
+        console.log(scrollDelta);
         x.css("top", "0px");
+        setTimeout(() => {
+
+        }, 5000);
     }
+
     lastScrollTop = scrollTop;
 }))
